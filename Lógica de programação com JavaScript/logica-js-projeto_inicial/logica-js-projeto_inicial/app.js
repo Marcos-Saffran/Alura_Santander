@@ -1,9 +1,16 @@
-alert('Boa vindas ao jogo do número secreto!');
+alert("Estou aprendendo JavaScript");
 
-let numeroSecreto = 29;
-let chute = prompt('Digita um número entre 1 e 30:');
+// Pede o nome da pessoa e guarda na variável
+let nomeUsuario = prompt("Digite seu nome");
 
-if (chute == numeroSecreto) {
-    console.log('Isso ai! Você descobriu o número secreto!');
+// Pede a idade da pessoa e guarda na variável
+let idadeUsuario = prompt("Digite sua idade");
 
+let temPao = prompt("Você tem pão em casa? Responda com sim ou não");
+
+if (temPao === "sim") {
+    alert("Fazer sanduíche");
+} else {
+    alert("Fazer miojo");
 }
+
