@@ -10,7 +10,7 @@ while (chute != numeroSecreto) {
     
     // se chute for igual ao número secreto
     if (chute == numeroSecreto) {
-        alert(`Isso ai! Você descobriu o número secreto ${numeroSecreto} com ${tentativas} tentativas!`); // usando template string - usar a crase ``
+        break;
     } else {
         if (chute > numeroSecreto) {
             alert(`O número secreto é menor que ${chute}. Tente novamente!`);
@@ -21,3 +21,8 @@ while (chute != numeroSecreto) {
     }
 }
 
+if (tentativas > 1) {
+    alert(`Você descobriu o número secreto ${numeroSecreto} com ${tentativas} tentativas!`); // usando template string - usar a crase ``
+} else {
+    alert(`Isso ai! Você descobriu o número secreto ${numeroSecreto} com ${tentativas} tentativa!`); // usando template string - usar a crase ``
+}
