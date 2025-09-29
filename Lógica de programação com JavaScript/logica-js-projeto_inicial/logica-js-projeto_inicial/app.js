@@ -21,8 +21,8 @@ while (chute != numeroSecreto) {
     }
 }
 
-if (tentativas > 1) {
-    alert(`Você descobriu o número secreto ${numeroSecreto} com ${tentativas} tentativas!`); // usando template string - usar a crase ``
-} else {
-    alert(`Isso ai! Você descobriu o número secreto ${numeroSecreto} com ${tentativas} tentativa!`); // usando template string - usar a crase ``
-}
+let palavraTentativa = tentativas > 1 ? 'tentativas' : 'tentativa';
+// se tentativas for maior que 1, palavraTentativa recebe 'tentativas', senão recebe 'tentativa'
+
+alert(`Você descobriu o número secreto ${numeroSecreto} com ${tentativas} ${palavraTentativa}!`); // usando template string - usar a crase ``
+
