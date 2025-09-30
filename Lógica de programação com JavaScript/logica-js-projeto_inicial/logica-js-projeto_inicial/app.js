@@ -8,7 +8,7 @@ let tentativas = 1;
 
 // enquanto o chute não for igual ao número secreto
 while (chute != numeroSecreto) {
-    chute = prompt(`Escolha um número entre 1 e ${numeroMaximo}`);
+    chute = prompt(`Escolha um número entre 1 e ${numeroMaximo}`); // usando template string - usar a crase ``
     
     // se chute for igual ao número secreto
     if (chute == numeroSecreto) {
